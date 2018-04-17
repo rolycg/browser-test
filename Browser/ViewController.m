@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HTTPHandler.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
@@ -25,5 +25,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"%@", textField.text);
+    [self showWebContent:[HTTPHandler getContent:self.url.text]];
+    [textField resignFirstResponder];
+    return YES;
+}
 
+- (void)showWebContent:(NSString*)content {
+    [self.webContent setBackgroundColor:[UIColor clearColor]];
+    //pass the string to the webview
+    [self.webContent loadHTMLString:[content description] baseURL:[NSURL URLWithString:self.url.text]];
+}
+
+
+- (IBAction)EditingEnd:(id)sender {
+    NSLog(@"Keyboard hidden: %@", self.url.text);
+//    [self showWebContent:[HTTPHandler getContent:self.url.text]];
+}
 @end

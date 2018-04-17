@@ -16,6 +16,8 @@
 		4EE42D152086816100EE4238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D142086816100EE4238 /* main.m */; };
 		4EE42D1F2086816100EE4238 /* BrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D1E2086816100EE4238 /* BrowserTests.m */; };
 		4EE42D2A2086816100EE4238 /* BrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D292086816100EE4238 /* BrowserUITests.m */; };
+		4EE42D392086884B00EE4238 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE42D382086884B00EE4238 /* WebKit.framework */; };
+		4EE42D3B20868FD200EE4238 /* HTTPHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D3A20868FD200EE4238 /* HTTPHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		4EE42D252086816100EE4238 /* BrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE42D292086816100EE4238 /* BrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserUITests.m; sourceTree = "<group>"; };
 		4EE42D2B2086816100EE4238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EE42D382086884B00EE4238 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4EE42D3A20868FD200EE4238 /* HTTPHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPHandler.m; sourceTree = "<group>"; };
+		4EE42D3C2086935200EE4238 /* HTTPHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE42D392086884B00EE4238 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,7 @@
 				4EE42D1D2086816100EE4238 /* BrowserTests */,
 				4EE42D282086816100EE4238 /* BrowserUITests */,
 				4EE42D002086816000EE4238 /* Products */,
+				4EE42D372086884B00EE4238 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +120,8 @@
 				4EE42D132086816100EE4238 /* Info.plist */,
 				4EE42D142086816100EE4238 /* main.m */,
 				4EE42D0B2086816000EE4238 /* Browser.xcdatamodeld */,
+				4EE42D3A20868FD200EE4238 /* HTTPHandler.m */,
+				4EE42D3C2086935200EE4238 /* HTTPHandler.h */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -133,6 +142,14 @@
 				4EE42D2B2086816100EE4238 /* Info.plist */,
 			);
 			path = BrowserUITests;
+			sourceTree = "<group>";
+		};
+		4EE42D372086884B00EE4238 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EE42D382086884B00EE4238 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +286,7 @@
 				4EE42D0D2086816000EE4238 /* Browser.xcdatamodeld in Sources */,
 				4EE42D152086816100EE4238 /* main.m in Sources */,
 				4EE42D042086816000EE4238 /* AppDelegate.m in Sources */,
+				4EE42D3B20868FD200EE4238 /* HTTPHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NPB9J4KRXA;
 				INFOPLIST_FILE = Browser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NPB9J4KRXA;
 				INFOPLIST_FILE = Browser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
