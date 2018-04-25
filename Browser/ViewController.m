@@ -34,13 +34,11 @@
 
 - (void)showWebContent:(NSString*)content {
     [self.webContent setBackgroundColor:[UIColor clearColor]];
-    //pass the string to the webview
     [self.webContent loadHTMLString:[content description] baseURL:[NSURL URLWithString:self.url.text]];
 }
 
 
 - (IBAction)EditingEnd:(id)sender {
     NSLog(@"Keyboard hidden: %@", self.url.text);
-//    [self showWebContent:[HTTPHandler getContent:self.url.text]];
 }
 @end

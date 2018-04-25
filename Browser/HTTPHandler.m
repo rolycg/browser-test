@@ -25,9 +25,9 @@
     __block BOOL done = NO;
     __block NSMutableString *result = [NSMutableString stringWithCapacity:1000];;
     NSURLSessionDataTask *dataTask = [defaultSession dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSLog(@"Response: %@",response);
-        NSLog(@"Data: %@",data);
-        NSLog(@"Error: %@",error);
+//        NSLog(@"Response: %@",response);
+//        NSLog(@"Data: %@",data);
+//        NSLog(@"Error: %@",error);
         NSString* temp = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
         [result appendString:temp];
         done = YES;

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4026AB20879C77007C597E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4026AA20879C77007C597E /* Assets.xcassets */; };
+		4E6F7BC72087F3D900B38F9C /* UIButton+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F7BC62087F3D900B38F9C /* UIButton+Border.m */; };
+		4E7EF2CC208FD70A007E6202 /* NSURLProtocolExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7EF2CB208FD70A007E6202 /* NSURLProtocolExtended.m */; };
 		4EE42D042086816000EE4238 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D032086816000EE4238 /* AppDelegate.m */; };
 		4EE42D072086816000EE4238 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D062086816000EE4238 /* ViewController.m */; };
 		4EE42D0A2086816000EE4238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE42D082086816000EE4238 /* Main.storyboard */; };
 		4EE42D0D2086816000EE4238 /* Browser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D0B2086816000EE4238 /* Browser.xcdatamodeld */; };
-		4EE42D0F2086816100EE4238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE42D0E2086816100EE4238 /* Assets.xcassets */; };
 		4EE42D122086816100EE4238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE42D102086816100EE4238 /* LaunchScreen.storyboard */; };
 		4EE42D152086816100EE4238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D142086816100EE4238 /* main.m */; };
 		4EE42D1F2086816100EE4238 /* BrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE42D1E2086816100EE4238 /* BrowserTests.m */; };
@@ -38,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E4026AA20879C77007C597E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E6F7BC42087F27F00B38F9C /* UIButton+Border.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Border.h"; sourceTree = "<group>"; };
+		4E6F7BC62087F3D900B38F9C /* UIButton+Border.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Border.m"; sourceTree = "<group>"; };
+		4E7EF2CA208FD6BE007E6202 /* NSURLProtocolExtended.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLProtocolExtended.h; sourceTree = "<group>"; };
+		4E7EF2CB208FD70A007E6202 /* NSURLProtocolExtended.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLProtocolExtended.m; sourceTree = "<group>"; };
 		4EE42CFF2086816000EE4238 /* Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE42D022086816000EE4238 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4EE42D032086816000EE4238 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,7 +52,6 @@
 		4EE42D062086816000EE4238 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4EE42D092086816000EE4238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EE42D0C2086816000EE4238 /* Browser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Browser.xcdatamodel; sourceTree = "<group>"; };
-		4EE42D0E2086816100EE4238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EE42D112086816100EE4238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EE42D132086816100EE4238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EE42D142086816100EE4238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 		4EE42CF62086816000EE4238 = {
 			isa = PBXGroup;
 			children = (
+				4E4026AA20879C77007C597E /* Assets.xcassets */,
 				4EE42D012086816000EE4238 /* Browser */,
 				4EE42D1D2086816100EE4238 /* BrowserTests */,
 				4EE42D282086816100EE4238 /* BrowserUITests */,
@@ -115,13 +122,16 @@
 				4EE42D052086816000EE4238 /* ViewController.h */,
 				4EE42D062086816000EE4238 /* ViewController.m */,
 				4EE42D082086816000EE4238 /* Main.storyboard */,
-				4EE42D0E2086816100EE4238 /* Assets.xcassets */,
 				4EE42D102086816100EE4238 /* LaunchScreen.storyboard */,
 				4EE42D132086816100EE4238 /* Info.plist */,
 				4EE42D142086816100EE4238 /* main.m */,
 				4EE42D0B2086816000EE4238 /* Browser.xcdatamodeld */,
 				4EE42D3A20868FD200EE4238 /* HTTPHandler.m */,
 				4EE42D3C2086935200EE4238 /* HTTPHandler.h */,
+				4E6F7BC42087F27F00B38F9C /* UIButton+Border.h */,
+				4E6F7BC62087F3D900B38F9C /* UIButton+Border.m */,
+				4E7EF2CA208FD6BE007E6202 /* NSURLProtocolExtended.h */,
+				4E7EF2CB208FD70A007E6202 /* NSURLProtocolExtended.m */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -256,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE42D122086816100EE4238 /* LaunchScreen.storyboard in Resources */,
-				4EE42D0F2086816100EE4238 /* Assets.xcassets in Resources */,
+				4E4026AB20879C77007C597E /* Assets.xcassets in Resources */,
 				4EE42D0A2086816000EE4238 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE42D072086816000EE4238 /* ViewController.m in Sources */,
+				4E6F7BC72087F3D900B38F9C /* UIButton+Border.m in Sources */,
+				4E7EF2CC208FD70A007E6202 /* NSURLProtocolExtended.m in Sources */,
 				4EE42D0D2086816000EE4238 /* Browser.xcdatamodeld in Sources */,
 				4EE42D152086816100EE4238 /* main.m in Sources */,
 				4EE42D042086816000EE4238 /* AppDelegate.m in Sources */,
